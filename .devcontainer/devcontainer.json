@@ -1,7 +1,7 @@
 {
     "name": "Cyclus Workshop Test",
     "image" : "mcr.microsoft.com/devcontainers/miniconda:latest",
-    "postCreateCommand": "echo 'source /opt/conda/etc/profile.d/conda.sh' >> ~/.bashrc && echo 'conda activate base' >> ~/.bashrc && conda install -y -c conda-forge python==3.12 cycamore cymetric==1.6.0 icu=75",   
+    "postCreateCommand": "echo 'source /opt/conda/etc/profile.d/conda.sh' >> ~/.bashrc && echo 'conda activate cyclus-workshop' >> ~/.bashrc && conda create -n cyclus-workshop python==3.12 && conda activate cyclus-workshop && conda install -y -c conda-forge cycamore cymetric==1.6.0 icu=75",   
     "customizations": {
         "vscode": {
             "extensions": [
